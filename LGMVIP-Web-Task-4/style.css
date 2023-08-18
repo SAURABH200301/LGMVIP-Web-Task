@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-position: center center;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+    color: #3a4452;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    text-shadow: 0 0 20px rgba(197, 197, 197, 0.5);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: rgba(109, 180, 238, 0.11);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    user-select: none;
+}
+
+.calculator div input:active {
+    box-shadow: 0 4px #666;
+    transform: translateY(1px);
+    transition-delay: -99s;
+}
+
+.calculator form input {
+    width: 60px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: -8px -8px 20px rgba(255, 255, 255, 0.05),
+                8px 8px 20px rgba(0, 0, 0, 0.5);
+
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.calculator form div input:hover {
+    background: #3a4452;
+}
+
+.calculator form div span input:hover {
+    background: #3a44525d;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+
+}
+
+.last-button {
+    width: 145px !important;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 0px 0px 1px 0px;
+    color: #fff;
+    background: #93c9e43f;
+}
+
+.calculator form input:hover {
+    background: #3a44525d;
+}
+
+.calculator form input:active {
+    background: #3a44525d;
+}
+
+@media (max-width: 480px) {
+    .container {
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    .calculator form input {
+        width: 55px;
+        padding: 6px;
+    }
+
+    .last-button {
+        width: 135px !important;
+    }
+
+    .calculator {
+        padding: 10px;
+    }
+
+}
